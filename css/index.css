@@ -2609,6 +2609,35 @@ figure.highlight pre .javascript .function {
 .page-title + .tag-cloud-list {
   text-align: left;
 }
+#page-header {
+  background: transparent !important;
+  background-image: unset !important;
+}
+#page-header.post-bg,
+#page-header.not-home-page {
+  height: 600px !important /*这个是上面准备留多高*/;
+}
+#page-header #post-info {
+  bottom: 200px !important /*这个是上面文字的位置*/;
+  text-align: center;
+}
+#page-header #page-site-info {
+  top: 140px !important;
+}
+@media screen and (max-width: 768px) {
+  #page-header.not-home-page {
+    height: 200px !important;
+  }
+  #page-header #post-info {
+    bottom: 10px !important;
+  }
+  #page-header #page-site-info {
+    top: 100px !important;
+  }
+}
+[data-theme='dark'] #page-header {
+  filter: brightness(0.8);
+}
 #aside-content {
   width: 26%;
 }
@@ -3393,7 +3422,6 @@ figure.highlight pre .javascript .function {
 #page-header {
   position: relative;
   width: 100%;
-  background-color: #49b1f5;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
