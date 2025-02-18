@@ -1,4 +1,5 @@
 document.onkeydown = function (e) {
+    debounce(function(){
     if (e.keyCode === 123 || 
         (e.ctrlKey && e.shiftKey && [74, 73, 67].includes(e.keyCode)) || 
         (e.ctrlKey && e.keyCode === 85)) {
@@ -16,5 +17,5 @@ document.onkeydown = function (e) {
                 });
             }
         })
-    }
+    }},300);
 };
