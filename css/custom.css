@@ -286,7 +286,7 @@ div#archive {
   height: 16px;
   /* 这里改变跟随的底色 */
   background: rgb(57, 197, 187);
-  border-radius: 8px;
+  border-radius: 16px;
   opacity: 0.25;
   z-index: 10086;
   pointer-events: none;
@@ -314,4 +314,17 @@ div#archive {
   -moz-transform: scale(0.5);
   -ms-transform: scale(0.5);
   -o-transform: scale(0.5);
+}
+
+@font-face {
+  /* 为载入的字体取名字(随意) */
+  font-family: 'zhuzi';	
+  /* 字体文件地址(相对或者绝对路径都可以) */
+  src: url(/font/zhuzi.woff2);
+  /* 定义加粗样式(加粗多少) */
+  font-weight: normal;
+  /* 定义字体样式(斜体/非斜体) */
+  font-style: normal;
+  /* 定义显示样式 */
+  font-display: block;
 }
