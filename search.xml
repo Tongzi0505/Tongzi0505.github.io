@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title>test2</title>
-      <link href="/2025/02/21/test2/"/>
-      <url>/2025/02/21/test2/</url>
-      
-        <content type="html"><![CDATA[<h1 id="AI绘画入门教程-一"><a href="#AI绘画入门教程-一" class="headerlink" title="AI绘画入门教程(一)"></a>AI绘画入门教程(一)</h1><h2 id="0-前言"><a href="#0-前言" class="headerlink" title="0.前言"></a>0.前言</h2><p><strong>实际上写这个也是防止我以后忘了怎么用的XD。</strong></p><p>本教程与B站大部分教程类似，不过加入了我从零开始学习的经验。实际上入门是非常简单的事，就是优化图片的过程会比较的繁琐，<strong>入门教程</strong>我会分成WebUI与ComfyUI这两种不同的使用框架进行教程。需要注意本教程是在个人电脑部署模型生图而非云端生图(云端参数调整也可参考本教程)</p><p><strong>WebUI教程流程为:WebUI安装-模型下载-参数配置-WebUI基础出图</strong><br><strong>ComfyUI教程流程为:ComfyUI安装-模型下载-基础工作流搭建-常见报错排查-ComfyUi基础出图</strong></p><p>由于我不太喜欢WebUI以及我的电脑配置其实不是很好，WebUI的进阶教程将<strong>无限期延后</strong>(其实是我没学)<br>至于ComfyUI的进阶教学，等我写完基础教程就会在这里放链接，没看到就是还没写啦。</p><p>对于WebUI与ComfyUI的区别在这里先说一下。<br>WebUI各个功能是组合起来的，运行逻辑被隐藏起来。优点是对于新手比较友好，不需要学习整个生图流程的原理，按教程配置参数即可。缺点是灵活性较低且占用内存显存较多，对配置较低的用户不太友好。</p><p>ComfUI则以是工作流形式运行，运行逻辑完全外显，各个功能被打散为各个节点。优点是灵活度很高，内存显存占用低，可以生成在WebUI因性能问题无法生成的图。缺点是较难上手，需要学习生图流程的原理，不然难以搭建可用的工作流。</p><p><strong>推荐配置</strong>:<br>window10以上<br>CPU不做强制性要求<br><strong>GPU最好为20系以后Nvidia的独立显卡，显存最低4G(A卡需要自行前往 AMD 官网下载安装 HIP SDK，核显只能用CPU跑)</strong><br>内存推荐8G以上<br>整合包与模型最好放在固态硬盘中</p><h2 id="1-WebUI的安装"><a href="#1-WebUI的安装" class="headerlink" title="1.WebUI的安装"></a>1.WebUI的安装</h2><p>本教程使用<a href="https://www.bilibili.com/video/BV1iM4y1y7oA/">秋葉aaaki大佬的WebUI一键包</a>，比较方便，下载解压即可，视频中有详细教程，这里不再赘述。</p><h2 id="2-模型下载"><a href="#2-模型下载" class="headerlink" title="2.模型下载"></a>2.模型下载</h2><p>这里给出三种下载模型的方式</p><p>1.在Civitai下载(需要魔法，模型较全，<a href="https://cvitai.cn/">国内镜像</a>)<br>2.在<a href="https://www.liblib.art/">LiblibAI</a>下载(访问快，但是部分模型不允许下载，小部分模型可能找不到)<br>3.在<a href="https://huggingface.co/">Hugging Face</a>下载(访问慢，模型较全，国内镜像<a href="https://hf-mirror.com/">HF-mirror</a>)</p><p>目前主流的Checkpoint大模型如下</p><table><thead><tr><th align="center">基础算法</th><th align="center">以基础算法为底模的模型</th><th align="center">其它模型</th></tr></thead><tbody><tr><td align="center">SD1.5</td><td align="center">NoobAI(基于SDXL)</td><td align="center">FLUX</td></tr><tr><td align="center">SD3</td><td align="center">Pony(基于SDXL)</td><td align="center"></td></tr><tr><td align="center">SDXL</td><td align="center"></td><td align="center"></td></tr><tr><td align="center">SD3.5</td><td align="center"></td><td align="center"></td></tr></tbody></table><p>大家可以自己去搜一下看看各自特点与性能要求是什么再下载使用，我这里的举例肯定也是不完全的，选择自己喜欢的即可。<br>一键包也内置了基于SD1.5训练的anything-v5模型</p><h2 id="3-参数配置"><a href="#3-参数配置" class="headerlink" title="3.参数配置"></a>3.参数配置</h2><p>启动WebUI后，会在浏览器打开WebUI工作界面</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>如何用nonebot+napcat手搓属于自己的QQ机器人</title>
       <link href="/2025/02/18/bot/"/>
       <url>/2025/02/18/bot/</url>
