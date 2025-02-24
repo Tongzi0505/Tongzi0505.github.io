@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>苍之彼方的四重奏解包记录</title>
+      <link href="/2025/02/24/aokana/"/>
+      <url>/2025/02/24/aokana/</url>
+      
+        <content type="html"><![CDATA[<h1 id="《苍之彼方的四重奏》CG-提取"><a href="#《苍之彼方的四重奏》CG-提取" class="headerlink" title="《苍之彼方的四重奏》CG 提取"></a>《苍之彼方的四重奏》CG 提取</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>aokana的steam版用的<code>.dat</code>加密，一般工具还真不好解。<br>工具：<a href="https://github.com/hktkqj/Aokana-Extractor">https://github.com/hktkqj/Aokana-Extractor</a><br>原作者链接：<a href="https://zhuanlan.zhihu.com/p/108191499">https://zhuanlan.zhihu.com/p/108191499</a></p><h2 id="动手"><a href="#动手" class="headerlink" title="动手"></a>动手</h2><h3 id="1-先全部提取"><a href="#1-先全部提取" class="headerlink" title="1.先全部提取"></a>1.先全部提取</h3><p>将工具<code>git clone</code>到装着.dat的文件夹下。<br>在该文件夹下打开终端，或者<code>cd</code>一下也成。输入以下命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py extract.py xxx.dat ./xxx/</span><br></pre></td></tr></table></figure><p>其中<code>xxx.dat</code>是你想要解包的文件，<code>./xxx/</code>是你想存放解包出来的文件的地方。这里用了相对路径，要把输出文件夹在根目录下。<br>例如我需要解包<code>evcg2.dat</code>到<code>output</code>文件夹，就在放.bat的文件夹下新建<code>output</code>文件夹，然后在<code>.dat</code>文件夹下打开终端，输入</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py extract.py evcg2.dat ./output/</span><br></pre></td></tr></table></figure><p>顺带一提，原作者用的是<code>python3</code>命令，不好使就换成<code>py</code>命令</p><h3 id="2-格式转换"><a href="#2-格式转换" class="headerlink" title="2.格式转换"></a>2.格式转换</h3><p>需要用到<code>ffmpeg(</code>什么万能工具)</p><p>进入需要转换的文件夹并新建文件夹<code>convert</code>打开终端，输入</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py &lt;convert.py路径&gt;</span><br></pre></td></tr></table></figure><p>这里嫌把<code>convert.py</code>移来移去太麻烦，就不用相对路径了，大家用自己的绝对路径就好</p><h3 id="3-合成图像"><a href="#3-合成图像" class="headerlink" title="3.合成图像"></a>3.合成图像</h3><p>这里需要安装<a href="https://legacy.imagemagick.org/script/download.php#windows">ImageMagick – 下载</a><br>下载最新release即可，安装程序会自动添加环境变量</p><p>按照步骤一提取 <code>system.dat</code>，找到 <code>def</code> 文件夹，将 <code>vcglist.csv</code> 复制出来为后续操作做准备。<br>将 <code>vcglist.csv</code> 放入待合成的文件夹，新建文件夹 <code>combined</code>，使用命令 <code>cd</code> 进入该文件夹，执行以下命令。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py &lt;combine.py路径&gt;</span><br></pre></td></tr></table></figure><p>如有合成失败的图片，会记录在同目录下的 <code>failed.log</code>。日志中记录合成失败的CG，以此为根据查询<code>vcglist.csv</code>找到缺少的文件。</p><p>合成时间有点长的，至于oped什么的，用AssetStudio就看得见</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Galgame解包记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 解包 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>AI绘画入门教程(二)</title>
       <link href="/2025/02/22/AIdrawing2/"/>
       <url>/2025/02/22/AIdrawing2/</url>
